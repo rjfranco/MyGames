@@ -4,7 +4,7 @@ class CreateGames < ActiveRecord::Migration
       t.string :name
       t.integer :rating
       t.string :comment
-      t.time :release
+      t.date :release
 
       t.timestamps
     end
