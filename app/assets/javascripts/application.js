@@ -12,4 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require modernizr
+//= require lib/ember-0.9.4.js
+//= require lib/ember-rest.js
+//= require games
+//= require_tree ./models
+//= require_tree ./controllers
+//= require_tree ./views
+//= require_tree ./templates

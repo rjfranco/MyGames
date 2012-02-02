@@ -7,6 +7,9 @@ gem 'rails', '3.2.1'
 
 gem 'pg'
 gem 'haml'
+gem 'coffee-filter'
+gem 'ember-rails'
+gem 'modernizr-rails'
 
 
 # Gems used only for assets and not required

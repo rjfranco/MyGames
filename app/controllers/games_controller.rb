@@ -62,6 +62,8 @@ class GamesController < ApplicationController
       if @game.update_attributes(params[:game])
         format.html { redirect_to @game, notice: 'Game was successfully updated.' }
         format.json { head :no_content }
+        # Might need this instead
+        # format.json { render json: nil, status: ok }
       else
         format.html { render action: "edit" }
         format.json { render json: @game.errors, status: :unprocessable_entity }
@@ -78,6 +80,8 @@ class GamesController < ApplicationController
     respond_to do |format|
       format.html { redirect_to games_url }
       format.json { head :no_content }
+      # Might need this instead
+      # format.json { render json: nil, status: ok }
     end
   end
 end
