@@ -1,0 +1,8 @@
+{{#with game}}
+  {{view Ember.TextField valueBinding="name" placeholder="Name"}}
+  {{view Ember.TextField valueBinding="rating" placeholder="Rating"}}
+  <button type="submit">
+    {{#if id}}Update{{else}}Create{{/if}}
+  </button>
+{{/with}}
+<a href="#" {{action "cancelForm"}}>Cancel</a>

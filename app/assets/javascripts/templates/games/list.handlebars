@@ -3,5 +3,11 @@
 {{#each games}}
     {{view MyGames.ShowGameView gameBinding="this"}}
 {{/each}}
+{{#if isNewVisible}}
+  {{view MyGames.NewGameView}}
+{{/if}}
   </li>
 </ul>
+
+<a href="#" {{action "showNew"}}>New Game</a>
+<a href="#" {{action "refreshListing"}}>Refresh Listing</a>
