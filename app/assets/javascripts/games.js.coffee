@@ -1,1 +1,1 @@
-@MyGames = Ember.Application.create()
+@MyGames = Ember.Application.create
